@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>FitnessApp</title>
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="css/style.css">   
+</head>
+
+<body>
+    
+    <div class="container">
+    
+        <div class="row">
+            <div class="col-sm-4 col-sm-offset-4 form-group">
+                <label for="userAge">Age:</label>
+                <input type="text" class="form-control" id="userAge">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-sm-2 col-sm-offset-5">
+                <div class="radio">
+                    <label class="radio-inline"><input type="radio" name="optRadio" id="maleRadio" value="1">Male</label>
+                    <label class="radio-inline"><input type="radio" name="optRadio" id="femaleRadio" value="2">Female</label>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-sm-4 col-sm-offset-4 form-group">
+                <label for="userWeight">Weight:</label>
+                <input type="text" class="form-control" id="userWeight">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-sm-4 col-sm-offset-4 form-group">
+                <label for="userHeight">Height (in cm):</label>
+                <input type="text" class="form-control" id="userHeight">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-sm-4 col-sm-offset-4 form-group">
+                <label for="userExLevel">What is your exercise level?</label>
+                <select class="form-control" id="userExLevel">
+                    <option value='1'>Basal Metabolic Rate</option>
+                    <option value='2'>Little to no exercise</option>
+                    <option value='3'>3 times per week</option>
+                    <option value='4'>4 times per week</option>
+                    <option value='5'>5 times per week</option>
+                    <option value='6'>Daily</option>
+                    <option value='7'>5 times per week (intense)</option>
+                    <option value='8'>Daily (intense)</option>
+                </select>
+            </div>
+        </div>
+        
+        <button type="button" class="btn btn-primary btn-lg" id="submitButton">Submit</button>
+        
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+                <h3 id="finalResult"></h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+                <h3 id="finalResultLoss"></h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+                <h3 id="finalResultGain"></h3>
+            </div>
+        </div>
+    
+    
+    </div>
+    
+    
+    
+    
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+    <script src="js/script.js"></script>
+</body>
+
+
+
+
+</html>
